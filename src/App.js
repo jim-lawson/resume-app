@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { AppContextProvider } from './AppContext'
+import Page from './components/Page'
+import { pageData } from './data/data'
 
 function App() {
+  const context = {
+    colors: { backgroundColor: '#ddd', accentColor: 'rgb(2, 130, 174)' }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContextProvider value={context}>
+      {pageData.pages.map((page, index) => (
+        <Page key={index} page={page} />
+      ))}
+    </AppContextProvider>
+  )
 }
 
-export default App;
+export default App
