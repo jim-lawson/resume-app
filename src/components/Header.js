@@ -75,7 +75,7 @@ const Header = props => {
           image="jim"
           alt="Jim Lawson"
           shadow={true}
-          width={145}
+          width={159}
           height={94}
         />
         // </div>

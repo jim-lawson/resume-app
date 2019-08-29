@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import jim from '../images/jim-cropped-bw.jpg'
+import jim from '../images/jim-cropped-color.png'
 import twitterImg from '../images/twitter.png'
 import facebookImg from '../images/facebook.png'
 import linkedInImg from '../images/linkedin.png'
