@@ -55,11 +55,17 @@ const Year = styled.li`
 const Timeline = props => {
   const { data } = props
 
+  if (!data.length) {
+    console.warn('Timeline component data is empty')
+    return <div />
+  }
+
   const firstYear = data[0].startDate.getFullYear()
   const lastYear = data[data.length - 1].endDate.getFullYear()
   const yearElements = []
 
   const numYears = lastYear - firstYear + 2
+  // TODO: width should probably be a prop or set to the width of the component's parent
   const timeLineWidth = 750
   const yearWidth = parseInt(timeLineWidth / numYears)
   const circleRadius = 3
