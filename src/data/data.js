@@ -13,22 +13,22 @@ export const pageData = {
               company: 'Maana',
               location: 'Bellevue',
               startDate: new Date(2015, 9),
-              endDate: new Date(2019, 8),
+              endDate: new Date(),
               sections: [
                 {
                   heading: null,
                   body: [
                     `After 10 years at Microsoft, I was ready for a new challenge. Joining Maana marked a sea change in my 
                     career as I learned a whole new technology stack and new processes for developing and shipping software. 
-                    Instead of using Microsoft technologies, we use Mac and Unix. I learned Scala and was introduced to the 
-                    concept of functional programming. In place of a monolithic software solutions, I was introduced to 
-                    containers, microservices, continuous delivery, and open-source libraries such as React.`
+                    Instead of using Microsoft technologies, we use Mac and Unix, and open-source libraries such as React. 
+                    I learned Scala and was introduced to the concept of functional programming. In place of monolithic
+                    software solutions, I was introduced to containers, microservices, and continuous delivery.`
                   ]
                 },
                 {
                   heading: 'Maana V2',
                   body: [
-                    `For V2 we started with a clean slate, fully ebracing more-modern, widely-supported technologies using 
+                    `For V2 we started with a clean slate, fully embracing more-modern, widely-supported technologies using 
                     React with Apollo (client and server) to leverage GraphQL for queries and data mutations, while the 
                     backend was broken out into microservices running in containers. As with V1, I focused on 
                     creating UI components including a new graph which included the ability to perform full CRUD operations in 
@@ -44,7 +44,7 @@ export const pageData = {
                     The idea behind this language choice was that any developer in the company could work on the UI layer 
                     since the backend language of choice was Scala. In working on V1, I created our graph 
                     component using Cytoscape and produced several different custom layout routines needed to display 
-                    graphs in various formats. I also implemented other visulizations using libraries such as D3. While I liked 
+                    graphs in various formats. I also implemented other visulizations using libraries such as D3. While I like 
                     Scala's elegance and many of its constructs, I decided this was a poor choice for coding UI as SclaJS not 
                     well-supported and working with libraries such as React was downright painful.`
                   ]
@@ -183,11 +183,12 @@ export const pageData = {
             {
               title: 'Resume Code',
               icon: 'code',
+              intro: ['This resume was built as a React app.'],
               images: [
                 {
                   image: 'github',
                   label: 'Source Code',
-                  href: '',
+                  href: 'https://github.com/jim-lawson/resume-app',
                   alt: 'GitHub',
                   width: 20,
                   height: 20
