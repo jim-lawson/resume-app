@@ -1,0 +1,15 @@
+{
+  "short_name": "Jim Lawson - Resume",
+  "name": "Jim Lawson - Resume",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "rgb(2, 130, 174)",
+  "background_color": "#ffffff"
+}
