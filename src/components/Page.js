@@ -10,15 +10,17 @@ import Heading from '../components/Heading'
 import Timeline from './Timeline'
 import Skills from './Skills'
 
+const isDevelopment = process.env.NODE_ENV === 'development'
+
 const Container = styled.div`
   min-width: 8.5in;
   max-width: 8.5in;
   min-height: 11in;
-  max-height: 11in;
+  /* Constrain page height to 11 inches in development so that PDF/printed page cutoff is visible */
+  ${isDevelopment && 'max-height: 11in; overflow: hidden;'}
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 `
 
 const Main = styled.main`
