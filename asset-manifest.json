@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.js": "./static/js/main.e8ea56cb.chunk.js",
-    "main.js.map": "./static/js/main.e8ea56cb.chunk.js.map",
+    "main.js": "./static/js/main.b11772a9.chunk.js",
+    "main.js.map": "./static/js/main.b11772a9.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.86a7fd0e.js",
     "runtime~main.js.map": "./static/js/runtime~main.86a7fd0e.js.map",
     "static/js/2.4dc598ab.chunk.js": "./static/js/2.4dc598ab.chunk.js",
     "static/js/2.4dc598ab.chunk.js.map": "./static/js/2.4dc598ab.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.c864637494d78dea92c3a123410aafc3.js": "./precache-manifest.c864637494d78dea92c3a123410aafc3.js",
+    "precache-manifest.83a0d9b5c77e336a7c0f4e634c836d6d.js": "./precache-manifest.83a0d9b5c77e336a7c0f4e634c836d6d.js",
     "service-worker.js": "./service-worker.js",
+    "static/media/jim-cropped-color.png": "./static/media/jim-cropped-color.55b63af2.png",
     "static/media/react-native-app.png": "./static/media/react-native-app.dbe507b1.png"
   }
 }
