@@ -9,19 +9,17 @@ import Heading from '../Heading'
 const ListContainer = styled.div`
   ul {
     position: relative;
-    padding-left: 1.75rem;
-  }
-  ul:last-child {
-    margin-bottom: 0.5em;
+    margin-left: 28px;
   }
   ul::before {
     position: absolute;
-    left: 10px;
-    top: 14px;
+    left: 0px;
+    top: 16px;
+    margin-left: -17px;
     content: '';
     background: #ddd;
     width: 1px;
-    height: calc(100% - 4px);
+    height: calc(100% - 15px);
   }
   li {
     font-size: 1.5em;
@@ -30,12 +28,12 @@ const ListContainer = styled.div`
   h5 {
     color: ${props => props.accentColor};
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5em;
   }
   h6 {
     color: #333;
-    margin-left: 0.25rem;
-    font-size: 1rem;
+    margin-left: 5px;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
 `

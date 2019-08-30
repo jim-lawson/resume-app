@@ -1,4 +1,4 @@
-export const pageData = {
+export const multiPageData = {
   pages: [
     {
       headerSize: 'large',
@@ -327,20 +327,33 @@ export const pageData = {
   ]
 }
 
-export const timelineData = pageData.pages
-  .map(page => {
-    return page.main.article.experience.map(exp => {
-      const { company, startDate, endDate } = exp
-      const data = {
-        label: company,
-        startDate,
-        endDate
-      }
+const combinedMains = multiPageData.pages.reduce(
+  (collector, page) => {
+    collector.article.experience.push(...page.main.article.experience)
+    collector.sidebar.sections.push(...page.main.sidebar.sections)
+    return collector
+  },
+  { article: { experience: [] }, sidebar: { sections: [] } }
+)
 
-      return data
-    })
+export const singlePageData = {
+  headerSize: 'large',
+  hasTimeline: true,
+  hasSkills: true,
+  main: combinedMains
+}
+
+export const timelineData = singlePageData.main.article.experience
+  .map(exp => {
+    const { company, startDate, endDate } = exp
+    const data = {
+      label: company,
+      startDate,
+      endDate
+    }
+
+    return data
   })
-  .flat()
   .reverse()
 
 export const skillsData = [

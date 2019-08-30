@@ -9,7 +9,7 @@ const Container = styled.div`
     color: #333;
     margin: 0 0.25em;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1em;
   }
   div {
     margin-top: 3px;

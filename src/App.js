@@ -1,17 +1,20 @@
 import React from 'react'
+import { HashRouter, Route } from 'react-router-dom'
 import { AppContextProvider } from './AppContext'
-import Page from './components/Page'
-import { pageData } from './data/data'
+import Resume from './components/Resume'
+import PaginatedResume from './components/PaginatedResume'
 
-function App() {
+const App = () => {
   const context = {
     colors: { backgroundColor: '#ddd', accentColor: 'rgb(2, 130, 174)' }
   }
+
   return (
     <AppContextProvider value={context}>
-      {pageData.pages.map((page, index) => (
-        <Page key={index} page={page} />
-      ))}
+      <HashRouter basename="/">
+        <Route path="/" exact component={Resume} />
+        <Route path="/printable" component={PaginatedResume} />
+      </HashRouter>
     </AppContextProvider>
   )
 }

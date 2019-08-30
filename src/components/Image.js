@@ -27,6 +27,12 @@ const Container = styled.div`
   ${props => props.shadow && shadow}
   ${props => props.roundedCorners && roundedCorners}
   margin: ${props => (props.verticalMargins ? '10px 15px 10px' : '5px')} 0;
+  a {
+    display: flex;
+    align-items: center;
+    color: #555;
+    text-decoration: none;
+  }
 `
 
 const Image = props => {
@@ -86,12 +92,7 @@ const Image = props => {
       verticalMargins={verticalMargins}
     >
       {href ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ display: 'block', color: '#555', textDecoration: 'none' }}
-        >
+        <a href={href} target="_blank" rel="noopener noreferrer">
           {contents}
         </a>
       ) : (

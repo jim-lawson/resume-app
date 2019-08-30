@@ -72,12 +72,12 @@ const SkillsContainer = styled.div`
 `
 
 const EducationContainer = styled.div`
-  font-size: 0.75rem;
+  font-size: 0.75em;
   margin-left: 15px;
 `
 
 const Page = props => {
-  const { page } = props
+  const { page, showPrintLink } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
   const { experience } = article
@@ -87,7 +87,7 @@ const Page = props => {
 
   return (
     <Container>
-      <Header size={headerSize} />
+      <Header size={headerSize} showPrintLink={showPrintLink} />
       <Main backgroundColor={backgroundColor}>
         <TwoColumn>
           <Article backgroundColor={backgroundColor}>

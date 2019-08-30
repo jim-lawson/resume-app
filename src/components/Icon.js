@@ -8,6 +8,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import InterestsIcon from '@material-ui/icons/Videocam'
 import LocationIcon from '@material-ui/icons/Room'
 import PhoneIcon from '@material-ui/icons/Phone'
+import PrintIcon from '@material-ui/icons/Print'
 import SkillsIcon from '@material-ui/icons/Build'
 import SocialIcon from '@material-ui/icons/AlternateEmail'
 import TimelineIcon from '@material-ui/icons/Timeline'
@@ -27,6 +28,7 @@ const icons = {
   interests: <InterestsIcon />,
   location: <LocationIcon />,
   phone: <PhoneIcon />,
+  print: <PrintIcon />,
   skills: <SkillsIcon />,
   social: <SocialIcon />,
   timeline: <TimelineIcon />,

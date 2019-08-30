@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 const Heading = styled.div`
   color: rgb(121, 73, 17);
-  font-size: 0.65rem;
+  font-size: 0.45em;
 `
 
 const Paragraph = styled.p`
-  font-size: 0.65rem;
+  font-size: 0.435em;
   margin-bottom: 5px;
 `
 

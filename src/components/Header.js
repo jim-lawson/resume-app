@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import AppContext from '../AppContext'
 import ContactInfo from './ContactInfo'
 import Image from './Image'
+import Icon from './Icon'
 
 const Container = styled.header`
   height: ${props => (props.size === 'large' ? '80px' : '40px')};
-  padding: 1.5em;
+  padding: 25px;
   display: flex;
   align-items: center;
   background: ${props => props.backgroundColor};
@@ -51,9 +53,24 @@ const ContactContainer = styled.div`
   margin-left: ${props => (props.size === 'large' ? '0' : '1.5em')};
 `
 
+const PrintableContainer = styled.div`
+  margin-top: 10px;
+  font-size: 1em;
+  a {
+    display: flex;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+  }
+  div {
+    margin-left: 5px;
+  }
+`
+
 const Header = props => {
-  const { size } = props
+  const { size, showPrintLink } = props
   const { colors } = useContext(AppContext)
+
   return (
     <Container size={size} backgroundColor={colors.backgroundColor}>
       <PersonalInfo size={size} accentColor={colors.accentColor}>
@@ -68,9 +85,16 @@ const Header = props => {
         <ContactContainer size={size}>
           <ContactInfo icon="phone" text="+1 206-856-5464"></ContactInfo>
         </ContactContainer>
+        {showPrintLink && (
+          <PrintableContainer>
+            <Link to="/printable" target="_blank" rel="noopener noreferrer">
+              <Icon icon="print" />
+              <div>Printable Format</div>
+            </Link>
+          </PrintableContainer>
+        )}
       </ContactsContainer>
       {size === 'large' && (
-        // <div>
         <Image
           image="jim"
           alt="Jim Lawson"
@@ -78,7 +102,6 @@ const Header = props => {
           width={159}
           height={94}
         />
-        // </div>
       )}
     </Container>
   )

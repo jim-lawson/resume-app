@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  padding: 0.25rem 0;
-  font-size: 0.75rem;
+  padding: 5px 0;
+  font-size: 0.5em;
   font-weight: bold;
 `
 

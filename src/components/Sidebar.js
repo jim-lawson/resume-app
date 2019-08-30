@@ -17,7 +17,7 @@ const ImagesContainer = styled.div`
 const BodyContainer = styled.div`
   margin-left: 10px;
   p {
-    font-size: 0.65rem;
+    font-size: 0.65em;
     margin-bottom: 5px;
   }
 `
