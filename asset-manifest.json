@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/resume-app/static/js/main.4357af8b.chunk.js",
-    "main.js.map": "/resume-app/static/js/main.4357af8b.chunk.js.map",
-    "runtime~main.js": "/resume-app/static/js/runtime~main.240ffc6e.js",
-    "runtime~main.js.map": "/resume-app/static/js/runtime~main.240ffc6e.js.map",
-    "static/js/2.fa242f7f.chunk.js": "/resume-app/static/js/2.fa242f7f.chunk.js",
-    "static/js/2.fa242f7f.chunk.js.map": "/resume-app/static/js/2.fa242f7f.chunk.js.map",
-    "index.html": "/resume-app/index.html",
-    "precache-manifest.ba985cb2b460e7e5af49bb9af0bb51a9.js": "/resume-app/precache-manifest.ba985cb2b460e7e5af49bb9af0bb51a9.js",
-    "service-worker.js": "/resume-app/service-worker.js",
-    "static/media/jim-cropped-color.png": "/resume-app/static/media/jim-cropped-color.55b63af2.png",
-    "static/media/react-native-app.png": "/resume-app/static/media/react-native-app.dbe507b1.png"
+    "main.js": "./static/js/main.4fbea115.chunk.js",
+    "main.js.map": "./static/js/main.4fbea115.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.86a7fd0e.js",
+    "runtime~main.js.map": "./static/js/runtime~main.86a7fd0e.js.map",
+    "static/js/2.e11d6494.chunk.js": "./static/js/2.e11d6494.chunk.js",
+    "static/js/2.e11d6494.chunk.js.map": "./static/js/2.e11d6494.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.c33fbcaeb5dda7c21937eadbf48e90ce.js": "./precache-manifest.c33fbcaeb5dda7c21937eadbf48e90ce.js",
+    "service-worker.js": "./service-worker.js",
+    "static/media/jim-cropped-color.png": "./static/media/jim-cropped-color.55b63af2.png",
+    "static/media/react-native-app.png": "./static/media/react-native-app.dbe507b1.png"
   }
 }
