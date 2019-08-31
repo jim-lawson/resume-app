@@ -7,11 +7,20 @@ import Image from './Image'
 import Icon from './Icon'
 
 const Container = styled.header`
-  height: ${props => (props.size === 'large' ? '80px' : '40px')};
+  height: ${props =>
+    props.size === 'large'
+      ? '6.5em'
+      : props.size === 'mobile'
+      ? '4.5em'
+      : '3em'};
   padding: 25px;
+  background: ${props => props.backgroundColor};
+`
+
+const DesktopContainer = styled.div`
+  height: ${props => (props.size === 'large' ? '7em' : '3em')};
   display: flex;
   align-items: center;
-  background: ${props => props.backgroundColor};
   justify-content: space-between;
 `
 
@@ -50,7 +59,12 @@ const ContactsContainer = styled.div`
 `
 
 const ContactContainer = styled.div`
-  margin-left: ${props => (props.size === 'large' ? '0' : '1.5em')};
+  margin-left: ${props =>
+    props.size === 'large' || props.size === 'mobile' ? '0' : '1.5em'};
+`
+
+const MobileContactsContainer = styled.div`
+  padding: 15px 0;
 `
 
 const PrintableContainer = styled.div`
@@ -71,38 +85,47 @@ const Header = props => {
   const { size, showPrintLink } = props
   const { colors } = useContext(AppContext)
 
+  const contactsContainer = (
+    <ContactsContainer size={size}>
+      <ContactContainer size={size}>
+        <ContactInfo icon="email" text="jim-lawson@comcast.net"></ContactInfo>
+      </ContactContainer>
+      <ContactContainer size={size}>
+        <ContactInfo icon="phone" text="+1 206-856-5464"></ContactInfo>
+      </ContactContainer>
+      {showPrintLink && (
+        <PrintableContainer>
+          <Link to="/printable" target="_blank" rel="noopener noreferrer">
+            <Icon icon="print" />
+            <div>Printable Format</div>
+          </Link>
+        </PrintableContainer>
+      )}
+    </ContactsContainer>
+  )
+
   return (
     <Container size={size} backgroundColor={colors.backgroundColor}>
-      <PersonalInfo size={size} accentColor={colors.accentColor}>
-        <h1>Jim</h1>
-        <h2>Lawson</h2>
-        <h3>Senior UI Engineer</h3>
-      </PersonalInfo>
-      <ContactsContainer size={size}>
-        <ContactContainer size={size}>
-          <ContactInfo icon="email" text="jim-lawson@comcast.net"></ContactInfo>
-        </ContactContainer>
-        <ContactContainer size={size}>
-          <ContactInfo icon="phone" text="+1 206-856-5464"></ContactInfo>
-        </ContactContainer>
-        {showPrintLink && (
-          <PrintableContainer>
-            <Link to="/printable" target="_blank" rel="noopener noreferrer">
-              <Icon icon="print" />
-              <div>Printable Format</div>
-            </Link>
-          </PrintableContainer>
+      <DesktopContainer size={size}>
+        <PersonalInfo size={size} accentColor={colors.accentColor}>
+          <h1>Jim</h1>
+          <h2>Lawson</h2>
+          <h3>Senior UI Engineer</h3>
+        </PersonalInfo>
+        {size !== 'mobile' && contactsContainer}
+        {(size === 'large' || size === 'mobile') && (
+          <Image
+            image="jim"
+            alt="Jim Lawson"
+            shadow={true}
+            width={size === 'mobile' ? 120 : 170}
+            height={size === 'mobile' ? 71 : 100}
+          />
         )}
-      </ContactsContainer>
-      {size === 'large' && (
-        <Image
-          image="jim"
-          alt="Jim Lawson"
-          shadow={true}
-          width={159}
-          height={94}
-        />
-      )}
+      </DesktopContainer>
+      <MobileContactsContainer>
+        {size === 'mobile' && contactsContainer}
+      </MobileContactsContainer>
     </Container>
   )
 }

@@ -5,19 +5,18 @@ import AppContext from '../AppContext'
 import Header from './Header'
 import Footer from './Footer'
 import Experience from './experience/Experience'
-import Sidebar from './Sidebar'
+import Sidebar from './sidebar/Sidebar'
 import Heading from '../components/Heading'
 import Timeline from './Timeline'
 import Skills from './Skills'
-
-const isDevelopment = process.env.NODE_ENV === 'development'
+import Education from './Education'
 
 const Container = styled.div`
   min-width: 8.5in;
   max-width: 8.5in;
   min-height: 11in;
   /* Constrain page height to 11 inches in development so that PDF/printed page cutoff is visible */
-  ${isDevelopment && 'max-height: 11in; overflow: hidden;'}
+  ${props => props.constrainHeight && 'max-height: 11in; overflow: hidden;'}
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -77,7 +76,7 @@ const EducationContainer = styled.div`
 `
 
 const Page = props => {
-  const { page, showPrintLink } = props
+  const { page, showPrintLink, constrainHeight = false } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
   const { experience } = article
@@ -86,7 +85,7 @@ const Page = props => {
   } = useContext(AppContext)
 
   return (
-    <Container>
+    <Container constrainHeight={constrainHeight}>
       <Header size={headerSize} showPrintLink={showPrintLink} />
       <Main backgroundColor={backgroundColor}>
         <TwoColumn>
@@ -105,12 +104,11 @@ const Page = props => {
             </TimelineContainer>
             <Heading icon="skills">Professional Skills</Heading>
             <SkillsContainer>
-              <Skills data={skillsData} />
+              <Skills data={skillsData} columns={4} />
             </SkillsContainer>
             <Heading icon="education">Education</Heading>
             <EducationContainer>
-              1992 - Washington State Univeristy Edward R. Murrow College of
-              Communication, Bachelors's Degree
+              <Education />
             </EducationContainer>
           </SingleColumn>
         )}

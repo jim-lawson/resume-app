@@ -23,7 +23,7 @@ const Period = styled.div`
 
 const PeriodText = styled.div`
   padding: 0 5px 5px 5px;
-  font-size: 10px;
+  font-size: 0.5em;
 `
 
 const PeriodBar = styled.div`
@@ -48,7 +48,7 @@ const Years = styled.ul`
 
 const Year = styled.li`
   list-style-type: none;
-  font-size: 10px;
+  font-size: 0.5em;
   text-align: center;
 `
 

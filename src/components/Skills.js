@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: ${props => props.columns};
   grid-row-gap: 10px;
 `
 
@@ -35,9 +35,15 @@ const SkillMeter = styled.div`
 `
 
 const Skills = props => {
-  const { data } = props
+  const { data, columns } = props
+
+  let columnsArr = []
+  for (let i = 0; i < columns; i++) {
+    columnsArr.push('1fr')
+  }
+
   return (
-    <Container>
+    <Container columns={columnsArr.join(' ')}>
       {data.map(skill => (
         <SkillBar key={skill.name}>
           <div>{skill.name}</div>

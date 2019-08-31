@@ -6,7 +6,12 @@ const PaginatedResume = () => {
   return (
     <div>
       {multiPageData.pages.map((page, index) => (
-        <Page key={index} page={page} showPrintLink={false} />
+        <Page
+          key={index}
+          page={page}
+          showPrintLink={false}
+          constrainHeight={true}
+        />
       ))}
     </div>
   )
