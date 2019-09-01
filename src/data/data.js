@@ -16,13 +16,25 @@ export const multiPageData = {
               endDate: new Date(),
               sections: [
                 {
-                  heading: null,
                   body: [
-                    `After 10 years at Microsoft, I was ready for a new challenge. Joining Maana marked a sea change in my 
+                    `After 10 years at Microsoft, I was ready for a new challenge. Joining startup Maana marked a sea change in my 
                     career as I learned a whole new technology stack and new processes for developing and shipping software. 
-                    Instead of using Microsoft technologies, we use Mac and Unix, and open-source libraries such as React. 
-                    I learned Scala and was introduced to the concept of functional programming. In place of monolithic
-                    software solutions, I was introduced to containers, microservices, and continuous delivery.`
+                    Instead of using Microsoft technologies, we use Mac and Unix and open-source libraries such as React. 
+                    I learned Scala and functional programming. I was introduced to containers, microservices, and continuous
+                    delivery. It was a real departure from the monolithic software solutions and technologies with which I was familiar.`
+                  ]
+                },
+                {
+                  heading: 'Maana V1',
+                  body: [
+                    `Another change from my previous roles was I that I worked exclusively on single-page  applications.
+                    Version 1 of our SPA UI was created using ScalaJS and was under development when I joined Maana. 
+                    The idea behind this language choice was that any developer in the company could work on the UI layer 
+                    since the backend language of choice was Scala. In working on V1, I created our graph 
+                    component using Cytoscape and produced several different custom layout routines needed to display 
+                    graphs in various formats. I also implemented other data visulizations using libraries such as D3. While I like 
+                    Scala's elegance and many of its constructs, I felt this was a poor choice for coding UI as SclaJS is not 
+                    well-supported and working with libraries such as React was downright painful. I pushed to change this in V2.`
                   ]
                 },
                 {
@@ -36,18 +48,6 @@ export const multiPageData = {
                     directly in the graph. I created several other components including a search UI, a panel for exploring
                     different elements within the application, and several data visualizations.`
                   ]
-                },
-                {
-                  heading: 'Maana V1',
-                  body: [
-                    `Version 1 of our SPA UI was created using ScalaJS and was under development when I joined Maana. 
-                    The idea behind this language choice was that any developer in the company could work on the UI layer 
-                    since the backend language of choice was Scala. In working on V1, I created our graph 
-                    component using Cytoscape and produced several different custom layout routines needed to display 
-                    graphs in various formats. I also implemented other visulizations using libraries such as D3. While I like 
-                    Scala's elegance and many of its constructs, I decided this was a poor choice for coding UI as SclaJS not 
-                    well-supported and working with libraries such as React was downright painful.`
-                  ]
                 }
               ]
             },
@@ -60,13 +60,42 @@ export const multiPageData = {
               endDate: new Date(2015, 8),
               sections: [
                 {
-                  heading: 'Bing Carousel Framework (2013 - 2015)',
                   body: [
-                    `I designed a new "2-dimensional" carousel consisting of images that when clicked expanded in place to 
-                    reveal a list of related items. I designed a common set of view models and templates to interface with existing 
-                    carousel data models, ensuring that I accounted for all existing needs while incorporating feature 
-                    needs for upcoming carousels. I led a cross-team collaboration to migrate all existing carousels to the 
-                    new framework. I also created visual parity tests to protect against regressions during migration.`
+                    `In 2005 I was recruited to join MSN Search by team members with whom I had previously worked as a contractor
+                    at Microsoft. MSN Search and Windows Live Search were predecessors of Bing.com. I updated and maintained current UX 
+                    production code while also prototyping and building components for what would eventually become features on 
+                    Bing, running each through usability studies/testing, then as experiments on small segments of production 
+                    traffic.`
+                  ]
+                },
+                {
+                  heading: 'Bing Homepage (2009, 2010)',
+                  body: [
+                    `The Bing homepage is well-known for it rich-image background, which is rotated daily. I helped create this 
+                    experience as part of a “hack-day” project. I designed and implemented “Homepage Hotspots”, which are the small boxes that 
+                    appear as you move your cursor  which then expand to show additional information about the image. I also created 
+                    the homepage image viewer which allows users to view previous days' homepage images.`
+                  ]
+                },
+                {
+                  heading: 'Bing AutoSuggest (2009 - 2012)',
+                  body: [
+                    `I created the first auto-suggest implementation for Bing (which is still in use today). I created a “Direct-Nav” 
+                    feature which surfaced suggestions that took the user directly to well-known external websites for 
+                    queries with navigational intent as well as other “rich suggestions” that contained images for well-known
+                    entities, extra metadata, etc. and “quick answers”. I created "horizontal auto-suggest", a feature 
+                    to help users quickly add words to their query as they type. I also led a cross-team collaboration to implement Bing's
+                    AutoSuggest on MSN.com.`
+                  ]
+                },
+                {
+                  heading: 'Bing Client Script Infrastructure (2009 - 2012)',
+                  body: [
+                    `Bing continued to grow rapidly as Microsoft invested heavily in search. As more UI engineers were brought 
+                    on board, we started to have duplicated script throughout our code base. I took inventory of all existing script functionality on Bing, identified areas in which we had duplicated 
+                    code, boiled-down code into reusable classes/functions resulting in a library that could be shared by all 
+                    UI engineers. I then wrote a check-in test that analyzed script changes for non-compliance with the new script 
+                    framework. I maintained the new script framework and added new functionality as needed.`
                   ]
                 },
                 {
@@ -79,42 +108,13 @@ export const multiPageData = {
                   ]
                 },
                 {
-                  heading: 'Bing AutoSuggest (2009- 2012)',
+                  heading: 'Bing Carousel Framework (2013 - 2015)',
                   body: [
-                    `I created the first auto-suggest implementation for Bing (which is still in use today). I created a “Direct-Nav” 
-                    feature which surfaced suggestions that took the user directly to well-known external websites for 
-                    queries with navigational intent, and other “rich suggestions” that contained images for well-known
-                    entities, extra metadata, etc. and “quick answers”. I created the "horizontal auto-suggest" feature 
-                    to help users quickly add words to their query as they typed. I led cross-team collaboration to implement Bing's
-                    AutoSuggest on MSN.com.`
-                  ]
-                },
-                {
-                  heading: 'Bing Client Script Infrastructure (2009 - 2012)',
-                  body: [
-                    `Bing continued to grow rapidly as Microsoft invested heavily in search. As more UI engineers were brought 
-                    on board, we started to have duplicated script throughout our code base. I took inventory of all existing script functionality on Bing, identified areas in which we had duplicated 
-                    code, boiled-down code into reusable classes/functions resulting in a library that could be shared by all 
-                    UI engineers. Wrote a check-in test that analyzed script changes for non-compliance with the new script 
-                    framework. I maintained the new script framework and added new functionality as needed.`
-                  ]
-                },
-                {
-                  heading: 'Bing Homepage (2009, 2010)',
-                  body: [
-                    `The Bing homepage is well-known for it rich-image background, which is rotated daily. I helped create this 
-                    experience as part of a “hack-day” project. Implemented “Homepage Hotspots”, which are the small boxes that 
-                    appear as you move your cursor  which then expand to show additional information about the image. I created 
-                    the image viewer which allows users to view previous days' homepage images.`
-                  ]
-                },
-                {
-                  heading: 'MSN Search/Windows Live Search (2005 - 2009)',
-                  body: [
-                    `MSN Search and Windows Live Search were predecessors of Bing.com. I updated and maintained current UX 
-                    production code while also prototyping and building components for what would eventually become features on 
-                    Bing, running each through usability studies/testing, then as experiments on small segments of production 
-                    traffic.`
+                    `I designed a new "2-dimensional" carousel consisting of images that when clicked expanded in place to 
+                    reveal a list of related items. I designed a common set of view models and templates to interface with existing 
+                    carousel data models, ensuring that I accounted for all existing needs while incorporating feature 
+                    needs for upcoming carousels. I led a cross-team collaboration to migrate all existing carousels to the 
+                    new framework.`
                   ]
                 }
               ]
@@ -129,7 +129,7 @@ export const multiPageData = {
               body: [
                 `I love writing code. I especially love writing code to create rich, compelling, user interfaces.`,
                 `There are few things I enjoy more than a challenging UI problem - whether it's a web site, a single-page
-                 application, a mobile app, a game, a Photoshop document, or even a 3D model.`,
+                 application, or mobile app.`,
                 `For nearly twenty five years, I have built up a solid portfolio and skill set as a UI engineer. Including my 
                 years in television/video production, and in design/layout in print media, I have enjoyed working 
                 in visual communications my entire adult life.`,
@@ -176,14 +176,14 @@ export const multiPageData = {
                 `Raising my daughter and two boys has helped me to grow into the hardworking, responsible person that I am - only bested 
                 by the love and support of my incredible wife to whom I have been married for 19 years.`,
                 `When I'm not attending my son's soccer matches, the kids' band and orchestra concerts, or vacationing with my
-                family, I'm typically working on my house, shooting and editing video, playing XBOX, and oftentimes
+                family, I'm typically working on my house, shooting/editing video, messing with Blender and Unity, playing XBOX, and oftentimes
                 writing code - either just for fun, or to learn new technologies - which I love to do.`
               ]
             },
             {
               title: 'Resume Code',
               icon: 'code',
-              intro: ['This resume was built as a React app.'],
+              intro: ['This resume was built using React.'],
               images: [
                 {
                   image: 'github',
@@ -228,7 +228,8 @@ export const multiPageData = {
                     `In 1999 I joined forces with two partners with whom I had worked previously in my contract roles at 
                     Microsoft to form "Alki Technology". This was a software company that specialized in creating custom
                     websites and single-page applications. Originally based in West Seattle, the company moved to a new office
-                    in the Fremont neighborhood of Seattle in 2002 as we increased our customer base and added employees.`,
+                    in the more "tech-centric" Fremont neighborhood of Seattle in 2002 as we increased our customer base and 
+                    added employees.`,
                     `My duties as partner included designing and developing user interfaces for all projects, managing our QA
                     team, and financial accounting duties which included managing accounts-payable/receivable, keeping our books
                     and meeting with our CPA on a 
@@ -252,13 +253,13 @@ export const multiPageData = {
                   heading: '',
                   body: [
                     `After 2 years with MSN I found a new contracting oppourtunity at Microsoft's new travel website, Expedia.
-                    As with my contracts at MSN, I worked with designers and editorial staff memebers to create articles for the
-                    public facing website. Further, I created browser-based tools that were used interally by our team to automate
-                    tasks including an application that allowed team members to copy site resources between environments.`,
-                    `By this time, I had learned CSS and JavaScript, both relatively new technologies at the time. Internet Explorer
-                    4 had been released roughly a year prior which, along with Netscape, gave birth to DHTML which I fully
-                    embraced with excitment as I could see the potential for creating dynamic user interfaces with relative ease, 
-                    especially after having learned to create Java Applets with its clunky AWT toolkit.`
+                    By this time, I had learned CSS and JavaScript, both relatively new technologies. Internet Explorer
+                    4 had been released roughly a year prior which, along with Netscape 5, gave birth to DHTML which I fully
+                    embraced with excitment and leveraged in my new role.`,
+                    `As with my contracts at MSN, I worked with designers and editorial staff memebers to create articles for the
+                    public facing website. I also led the effort to move much of the form validation for features such as the travel
+                    planner from the server to the browser. Further, I created browser-based tools that were used interally by our 
+                    team to automate tasks including an application that allowed team members to copy site resources between environments.`
                   ]
                 }
               ]
@@ -274,12 +275,12 @@ export const multiPageData = {
                 {
                   heading: '',
                   body: [
-                    `My career in software development began in 1996 working on a contract basis for Microsoft's MSN
-                    network, specifically Music Central - a website that served as a companion for their CD-ROM
+                    `My career in software development began in 1996 working on a contract basis for Microsoft's MSN,
+                    specifically Music Central - a website that served as a companion for their CD-ROM
                     product of the same name. I produced web pages by hand from comps delivered by the design
-                    team, with content delivered from the editorial team and we published updates to the 
+                    team and content delivered from the editorial team and we published updates to the 
                     public-facing website on a monthly basis.`,
-                    `In 1997, the product grew to included music-related content from third-party providers to 
+                    `In 1997, the product grew to include music-related content from third-party providers to 
                     supplement the orignal content produced by our team. It was at this time that I was learning Perl
                     because I wanted to learn how to write CGI scripts to receive and process data submitted via HTML
                     forms. I quickly realized the text-processing power of Perl and wrote scripts that took plain text
