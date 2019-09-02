@@ -12,12 +12,11 @@ import Skills from './Skills'
 import Education from './Education'
 
 const Container = styled.div`
-  min-width: ${props => props.width};
-  max-width: ${props => props.width};
-  min-height: ${props => props.height};
-  ${props =>
-    props.constrainHeight && `max-height: ${props.width}; overflow: hidden;`}
-  margin: 0 auto;
+  min-width: 8.5in;
+  max-width: 8.5in;
+  min-height: 11in;
+  ${props => props.constrainHeight && `max-height: 11.5in; overflow: hidden;`}
+  margin: ${props => (props.verticalMargins ? '15px' : '0')} auto;
   display: flex;
   flex-direction: column;
 `
@@ -74,14 +73,7 @@ const EducationContainer = styled.div`
 `
 
 const DesktopResume = props => {
-  const {
-    page,
-    width,
-    height,
-    constrainHeight,
-    showPrintLink,
-    sidebarWidth
-  } = props
+  const { page, constrainHeight, showPrintLink, verticalMargins } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
   const { experience } = article
@@ -90,7 +82,10 @@ const DesktopResume = props => {
   } = useContext(AppContext)
 
   return (
-    <Container width={width} height={height} constrainHeight={constrainHeight}>
+    <Container
+      constrainHeight={constrainHeight}
+      verticalMargins={verticalMargins}
+    >
       <Header size={headerSize} showPrintLink={showPrintLink} />
       <Main backgroundColor={backgroundColor}>
         <TwoColumn>
@@ -98,7 +93,7 @@ const DesktopResume = props => {
             <Experience data={experience} />
           </Article>
           <Aside>
-            <Sidebar data={sidebar} width={sidebarWidth} />
+            <Sidebar data={sidebar} />
           </Aside>
         </TwoColumn>
         {hasTimeline && hasSkills && (

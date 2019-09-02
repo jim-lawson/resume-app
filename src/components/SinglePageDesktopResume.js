@@ -4,7 +4,7 @@ import DesktopResume from './DesktopResume'
 import { singlePageData } from '../data/data'
 
 const Container = styled.div`
-  font-size: 24px;
+  zoom: 1.35;
 `
 
 const SinglePageDesktopResume = props => {
@@ -13,9 +13,7 @@ const SinglePageDesktopResume = props => {
       <DesktopResume
         page={singlePageData}
         showPrintLink={true}
-        width="1024px"
-        height="auto"
-        sidebarWidth={300}
+        verticalMargins={true}
       />
     </Container>
   )

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SidebarSection from './SidebarSection'
 
 const Container = styled.div`
-  width: ${props => props.width}px;
+  width: 200px;
 `
 
 const Sidebar = props => {
