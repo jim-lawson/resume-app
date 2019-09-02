@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  font-size: 0.65em;
+  font-size: 0.75em;
 `
 
 const Education = () => {

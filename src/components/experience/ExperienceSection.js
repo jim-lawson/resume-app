@@ -4,11 +4,12 @@ import styled from 'styled-components'
 const Heading = styled.div`
   color: rgb(121, 73, 17);
   font-size: 0.45em;
+  margin-bottom: 1px;
 `
 
 const Paragraph = styled.p`
   font-size: 0.435em;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 `
 
 const ExperienceSection = props => {
