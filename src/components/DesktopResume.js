@@ -12,11 +12,11 @@ import Skills from './Skills'
 import Education from './Education'
 
 const Container = styled.div`
-  min-width: 8.5in;
-  max-width: 8.5in;
-  min-height: 11in;
-  /* Constrain page height to 11 inches in development so that PDF/printed page cutoff is visible */
-  ${props => props.constrainHeight && 'max-height: 11in; overflow: hidden;'}
+  min-width: ${props => props.width};
+  max-width: ${props => props.width};
+  min-height: ${props => props.height};
+  ${props =>
+    props.constrainHeight && `max-height: ${props.width}; overflow: hidden;`}
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,6 @@ const Article = styled.article`
 `
 
 const Aside = styled.aside`
-  width: 200px;
   border-left: 1px solid #fff;
   border-radius: 15px 0 0 15px;
   padding: 15px 15px 0 10px;
@@ -71,12 +70,18 @@ const SkillsContainer = styled.div`
 `
 
 const EducationContainer = styled.div`
-  font-size: 0.75em;
   margin-left: 15px;
 `
 
 const DesktopResume = props => {
-  const { page, showPrintLink, constrainHeight = false } = props
+  const {
+    page,
+    width,
+    height,
+    constrainHeight,
+    showPrintLink,
+    sidebarWidth
+  } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
   const { experience } = article
@@ -85,7 +90,7 @@ const DesktopResume = props => {
   } = useContext(AppContext)
 
   return (
-    <Container constrainHeight={constrainHeight}>
+    <Container width={width} height={height} constrainHeight={constrainHeight}>
       <Header size={headerSize} showPrintLink={showPrintLink} />
       <Main backgroundColor={backgroundColor}>
         <TwoColumn>
@@ -93,7 +98,7 @@ const DesktopResume = props => {
             <Experience data={experience} />
           </Article>
           <Aside>
-            <Sidebar data={sidebar} />
+            <Sidebar data={sidebar} width={sidebarWidth} />
           </Aside>
         </TwoColumn>
         {hasTimeline && hasSkills && (

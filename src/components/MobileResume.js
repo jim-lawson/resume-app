@@ -50,7 +50,6 @@ const SkillsContainer = styled.div`
 `
 
 const EducationContainer = styled.div`
-  font-size: 0.75em;
   margin-left: 15px;
 `
 

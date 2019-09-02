@@ -10,6 +10,9 @@ const PaginatedDesktopResume = () => {
           key={index}
           page={page}
           showPrintLink={false}
+          width="8.5in"
+          height="11in"
+          sidebarWidth={200}
           constrainHeight={true}
         />
       ))}

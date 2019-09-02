@@ -59,8 +59,9 @@ const ContactsContainer = styled.div`
 `
 
 const ContactContainer = styled.div`
-  margin-left: ${props =>
-    props.size === 'large' || props.size === 'mobile' ? '0' : '1.5em'};
+  :last-child {
+    margin-left: ${props => (props.size === 'large' ? '0' : '1.5em')};
+  }
 `
 
 const MobileContactsContainer = styled.div`

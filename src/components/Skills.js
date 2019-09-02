@@ -10,7 +10,7 @@ const Container = styled.div`
 const SkillBar = styled.div`
   display: flex;
   > div {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     min-width: 6em;
     margin-right: 10px;
     color: #555;
