@@ -17,7 +17,7 @@ export const multiPageData = {
               sections: [
                 {
                   body: [
-                    `After 10 years at Microsoft, I was ready for a new challenge. Joining startup Maana marked a sea change in my 
+                    `After 10 years at Microsoft, I was ready for a new challenge. Joining startup Maana marked a significant change in my 
                     career as I learned a whole new technology stack and new processes for developing and shipping software. 
                     Instead of using Microsoft technologies, we use Mac and Unix and open-source libraries such as React. 
                     I learned Scala and functional programming. I was introduced to containers, microservices, and continuous
@@ -40,7 +40,7 @@ export const multiPageData = {
                 {
                   heading: 'Maana V2',
                   body: [
-                    `For V2 we started with a clean slate, fully embracing more-modern, widely-supported technologies using 
+                    `For V2 we started with a clean slate. We fully embraced more-modern, widely-supported technologies; we used 
                     React with Apollo (client and server) to leverage GraphQL for queries and data mutations, while the 
                     backend was broken out into microservices running in containers. As with V1, I focused on 
                     creating UI components including a new graph which included the ability to perform full CRUD operations in 
@@ -71,7 +71,7 @@ export const multiPageData = {
                 {
                   heading: 'Bing Homepage (2009, 2010)',
                   body: [
-                    `The Bing homepage is well-known for it rich-image background, which is rotated daily. I helped create this 
+                    `The Bing homepage is well-known for its background image, which is rotated daily. I helped create this 
                     experience as part of a “hack-day” project. I designed and implemented “Homepage Hotspots”, which are the small boxes that 
                     appear as you move your cursor  which then expand to show additional information about the image. I also created 
                     the homepage image viewer which allows users to view previous days' homepage images.`
@@ -132,7 +132,7 @@ export const multiPageData = {
                  application, or mobile app.`,
                 `For nearly twenty five years, I have built up a solid portfolio and skill set as a UI engineer. Including my 
                 years in television/video production, and in design/layout in print media, I have enjoyed working 
-                in visual communications my entire adult life.`,
+                in visual communication my entire adult life.`,
                 `I am a creative individual with the technical acumen and organizational and communication skills to take 
                 on challenging projects and see them through to completion with rewarding results.`
               ]
@@ -392,11 +392,11 @@ export const skillsData = [
   },
   {
     name: 'Angular',
-    percentage: '55'
+    percentage: '60'
   },
   {
     name: 'Firebase',
-    percentage: '55'
+    percentage: '60'
   },
   {
     name: 'Jest',
