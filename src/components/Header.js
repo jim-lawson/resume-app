@@ -119,8 +119,8 @@ const Header = props => {
             image="jim"
             alt="Jim Lawson"
             shadow={true}
-            width={size === 'mobile' ? 120 : 170}
-            height={size === 'mobile' ? 71 : 100}
+            width={size === 'mobile' ? 120 : 160}
+            height={size === 'mobile' ? 71 : 95}
           />
         )}
       </DesktopContainer>
