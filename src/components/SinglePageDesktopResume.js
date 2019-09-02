@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import Page from './Page'
+import DesktopResume from './DesktopResume'
 import { singlePageData } from '../data/data'
 
 const Container = styled.div`
   font-size: 20px;
 `
 
-const Resume = props => {
+const SinglePageDesktopResume = props => {
   return (
     <Container>
-      <Page page={singlePageData} showPrintLink={true} />
+      <DesktopResume page={singlePageData} showPrintLink={true} />
     </Container>
   )
 }
 
-export default Resume
+export default SinglePageDesktopResume

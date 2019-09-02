@@ -6,7 +6,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Experience from './experience/Experience'
 import Sidebar from './sidebar/Sidebar'
-import Heading from '../components/Heading'
+import Heading from './Heading'
 import Timeline from './Timeline'
 import Skills from './Skills'
 import Education from './Education'
@@ -75,7 +75,7 @@ const EducationContainer = styled.div`
   margin-left: 15px;
 `
 
-const Page = props => {
+const DesktopResume = props => {
   const { page, showPrintLink, constrainHeight = false } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
@@ -118,4 +118,4 @@ const Page = props => {
   )
 }
 
-export default Page
+export default DesktopResume

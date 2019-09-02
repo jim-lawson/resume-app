@@ -1,8 +1,8 @@
 import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 import { AppContextProvider } from './AppContext'
-import Resume from './components/Resume'
-import PaginatedResume from './components/PaginatedResume'
+import SinglePageDesktopResume from './components/SinglePageDesktopResume'
+import PaginatedDesktopResume from './components/PaginatedDesktopResume'
 import MobileResume from './components/MobileResume'
 
 const App = () => {
@@ -18,8 +18,8 @@ const App = () => {
         <MobileResume />
       ) : (
         <HashRouter basename="/">
-          <Route path="/" exact component={Resume} />
-          <Route path="/printable" component={PaginatedResume} />
+          <Route path="/" exact component={SinglePageDesktopResume} />
+          <Route path="/printable" component={PaginatedDesktopResume} />
         </HashRouter>
       )}
     </AppContextProvider>

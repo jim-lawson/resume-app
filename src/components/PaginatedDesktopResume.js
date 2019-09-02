@@ -1,12 +1,12 @@
 import React from 'react'
-import Page from './Page'
+import DesktopResume from './DesktopResume'
 import { multiPageData } from '../data/data'
 
-const PaginatedResume = () => {
+const PaginatedDesktopResume = () => {
   return (
     <div>
       {multiPageData.pages.map((page, index) => (
-        <Page
+        <DesktopResume
           key={index}
           page={page}
           showPrintLink={false}
@@ -17,4 +17,4 @@ const PaginatedResume = () => {
   )
 }
 
-export default PaginatedResume
+export default PaginatedDesktopResume
