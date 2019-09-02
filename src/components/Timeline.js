@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useState, useRef } from 'react'
 import styled from 'styled-components'
 
 const Colors = [
@@ -9,6 +9,10 @@ const Colors = [
 ]
 
 const OneYear = 1000 * 60 * 60 * 24 * 365
+
+const Container = styled.div`
+  width: 100%;
+`
 
 const Periods = styled.div`
   margin-bottom: -10px;
@@ -24,6 +28,9 @@ const Period = styled.div`
 const PeriodText = styled.div`
   padding: 0 5px 5px 5px;
   font-size: 0.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 `
 
 const PeriodBar = styled.div`
@@ -54,6 +61,13 @@ const Year = styled.li`
 
 const Timeline = props => {
   const { data } = props
+  const containerRef = useRef()
+
+  const [timeLineWidth, setTimeLineWidth] = useState(0)
+
+  useLayoutEffect(() => {
+    setTimeLineWidth(containerRef.current.offsetWidth)
+  }, [])
 
   if (!data.length) {
     console.warn('Timeline component data is empty')
@@ -65,8 +79,6 @@ const Timeline = props => {
   const yearElements = []
 
   const numYears = lastYear - firstYear + 2
-  // TODO: width should probably be a prop or set to the width of the component's parent
-  const timeLineWidth = 750
   const yearWidth = parseInt(timeLineWidth / numYears)
   const circleRadius = 3
   const circleStrokeWidth = 1
@@ -81,7 +93,7 @@ const Timeline = props => {
   }
 
   return (
-    <div>
+    <Container ref={containerRef}>
       <Periods>
         {data.map((entry, index) => {
           let timeGap = 0
@@ -158,7 +170,7 @@ const Timeline = props => {
         {/* TODO: magic number for left margin */}
         <Years style={{ marginLeft: '14px' }}>{yearElements}</Years>
       </YearsContainer>
-    </div>
+    </Container>
   )
 }
 
