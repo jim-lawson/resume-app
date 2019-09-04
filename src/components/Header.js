@@ -89,10 +89,18 @@ const Header = props => {
   const contactsContainer = (
     <ContactsContainer size={size}>
       <ContactContainer size={size}>
-        <ContactInfo icon="email" text="jim-lawson@comcast.net"></ContactInfo>
+        <ContactInfo
+          icon="email"
+          text="jim-lawson@comcast.net"
+          href="mailto:jim-lawson@comcast.net"
+        ></ContactInfo>
       </ContactContainer>
       <ContactContainer size={size}>
-        <ContactInfo icon="phone" text="+1 206-856-5464"></ContactInfo>
+        <ContactInfo
+          icon="phone"
+          text="+1 206-856-5464"
+          href="tel:+1 206-856-5464"
+        ></ContactInfo>
       </ContactContainer>
       {showPrintLink && (
         <PrintableContainer>

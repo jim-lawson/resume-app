@@ -3,6 +3,12 @@ import styled from 'styled-components'
 import Icon from './Icon'
 
 const Container = styled.div`
+  a {
+    text-decoration: none;
+  }
+`
+
+const Info = styled.div`
   display: flex;
   align-items: center;
   color: #666;
@@ -13,14 +19,18 @@ const Container = styled.div`
 `
 
 const ContactInfo = props => {
-  const { icon, text } = props
-  return (
-    <Container>
+  const { icon, text, href } = props
+  const contents = (
+    <Info>
       <div>
         <Icon icon={icon} />
       </div>
       <div>{text}</div>
-    </Container>
+    </Info>
+  )
+
+  return (
+    <Container>{href ? <a href={href}>{contents}</a> : contents}</Container>
   )
 }
 
