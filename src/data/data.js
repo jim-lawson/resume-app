@@ -19,7 +19,7 @@ export const multiPageData = {
                   body: [
                     `After 10 years at Microsoft, I was ready for a new challenge. Joining startup Maana marked a significant change in my 
                     career as I learned a whole new technology stack and new processes for developing and shipping software. 
-                    Instead of using Microsoft technologies, we use Mac and Unix and open-source libraries such as React. 
+                    Instead of using Microsoft technologies, we used Mac, Unix and open-source libraries such as React. 
                     I learned Scala and functional programming. I was introduced to containers, microservices, and continuous
                     delivery. It was a real departure from the monolithic software solutions and technologies with which I was familiar.`
                   ]
@@ -27,14 +27,13 @@ export const multiPageData = {
                 {
                   heading: 'Maana V1',
                   body: [
-                    `Another change from my previous roles was I that I worked exclusively on single-page  applications.
-                    Version 1 of our SPA UI was created using ScalaJS and was under development when I joined Maana. 
-                    The idea behind this language choice was that any developer in the company could work on the UI layer 
-                    since the backend language of choice was Scala. In working on V1, I created our graph 
-                    component using Cytoscape and produced several different custom layout routines needed to display 
-                    graphs in various formats. I also implemented other data visulizations using libraries such as D3. While I like 
-                    Scala's elegance and many of its constructs, I felt this was a poor choice for coding UI as SclaJS is not 
-                    well-supported and working with libraries such as React was downright painful. I pushed to change this in V2.`
+                    `Another change from my previous roles was that I worked exclusively on single-page applications at Maana.
+                    Version 1 of our SPA UI was created using ScalaJS and was under development when I joined the company. 
+                    In working on V1, I created our graph component using Cytoscape and produced several different custom layout routines 
+                    needed to display graphs in various formats. I also implemented other data visulizations using libraries such as D3.
+                    While I like Scala's elegance and many of its constructs, I felt this was a poor choice for coding UI as SclaJS is not 
+                    well-supported and working with libraries such as React was downright painful. I lobbied to move to JavaScript/JSX for 
+                    our next version.`
                   ]
                 },
                 {
@@ -45,8 +44,9 @@ export const multiPageData = {
                     backend was broken out into microservices running in containers. As with V1, I focused on 
                     creating UI components including a new graph which included the ability to perform full CRUD operations in 
                     the graph itself, including "in-node editing" whereby users could edit the schemas backing the various nodes
-                    directly in the graph. I created several other components including a search UI, a panel for exploring
-                    different elements within the application, and several data visualizations.`
+                    directly in the graph. I created several other components including a search UI, a component for exploring
+                    different elements within the application, and several data visualizations. I also worked with QA to create 
+                    end-to-end tests using Jest and Puppeteer.`
                   ]
                 }
               ]
@@ -381,6 +381,10 @@ export const skillsData = [
   {
     name: 'React Native',
     percentage: '75'
+  },
+  {
+    name: 'Redux',
+    percentage: '55'
   },
   {
     name: 'GraphQL',
