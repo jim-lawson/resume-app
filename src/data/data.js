@@ -13,7 +13,7 @@ export const multiPageData = {
               company: 'Maana',
               location: 'Bellevue',
               startDate: new Date(2015, 9),
-              endDate: new Date(),
+              endDate: new Date(2019, 7, 1),
               sections: [
                 {
                   body: [
@@ -233,7 +233,7 @@ export const multiPageData = {
                     `My duties as partner included designing and developing user interfaces for all projects, managing our QA
                     team, and financial accounting duties which included managing accounts-payable/receivable, keeping our books
                     and meeting with our CPA on a 
-                    querterly basis.`,
+                    quarterly basis.`,
                     `Customers included the University of Washington Housing and Food Services (UW HFS), Expedia, Ads.com, 
                     Storm King Art Center, Parfumerie Nasreen, Computer Stop, and others. Major projects included custom 
                     content management systems for UW HFS and Ads.com, as well as the public-facing Ads.com website.`
