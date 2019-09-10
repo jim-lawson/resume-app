@@ -24,8 +24,10 @@ const Months = [
 
 const formatMonth = date => Months[date.getMonth()]
 
+const now = new Date()
+
 const formatEndDate = date =>
-  date.getFullYear() === new Date().getFullYear()
+  date.getFullYear() === now.getFullYear() && date.getMonth() === now.getMonth()
     ? 'Present'
     : `${formatMonth(date)}, ${date.getFullYear()}`
 
