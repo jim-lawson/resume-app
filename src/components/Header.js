@@ -93,6 +93,7 @@ const Header = props => {
           icon="email"
           text="jim-lawson@comcast.net"
           href="mailto:jim-lawson@comcast.net"
+          linkIconOnly
         ></ContactInfo>
       </ContactContainer>
       <ContactContainer size={size}>

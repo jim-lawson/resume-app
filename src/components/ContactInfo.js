@@ -19,18 +19,21 @@ const Info = styled.div`
 `
 
 const ContactInfo = props => {
-  const { icon, text, href } = props
+  const { icon, text, href, linkIconOnly } = props
+
+  const iconComponent = linkIconOnly && href ? <a href={href}><Icon icon={icon} /></a> : <Icon icon={icon} />;
+
   const contents = (
     <Info>
       <div>
-        <Icon icon={icon} />
+        {iconComponent }
       </div>
       <div>{text}</div>
     </Info>
   )
 
   return (
-    <Container>{href ? <a href={href}>{contents}</a> : contents}</Container>
+    <Container>{!linkIconOnly && href ? <a href={href}>{contents}</a> : contents}</Container>
   )
 }
 
