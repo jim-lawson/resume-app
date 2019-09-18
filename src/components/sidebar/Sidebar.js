@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import SidebarSection from './SidebarSection'
 
@@ -19,3 +20,7 @@ const Sidebar = props => {
 }
 
 export default Sidebar
+
+Sidebar.propTypes = PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.object).isRequired
+}).isRequired

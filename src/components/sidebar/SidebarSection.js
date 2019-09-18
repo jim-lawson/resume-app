@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Heading from '../Heading'
 import Image from '../Image'
@@ -51,3 +52,20 @@ const SidebarSection = props => {
 }
 
 export default SidebarSection
+
+SidebarSection.propTypes = PropTypes.shape({
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  intro: PropTypes.string,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired,
+      hasRoundedCorners: PropTypes.bool,
+      hasVerticalMargins: PropTypes.bool
+    })
+  ),
+  body: PropTypes.arrayOf(PropTypes.string).isRequired
+}).isRequired

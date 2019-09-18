@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { timelineData, skillsData } from '../data/data'
 import AppContext from '../AppContext'
@@ -15,8 +16,9 @@ const Container = styled.div`
   min-width: 8.5in;
   max-width: 8.5in;
   min-height: 11in;
-  ${props => props.constrainHeight && `max-height: 11.5in; overflow: hidden;`}
-  margin: ${props => (props.verticalMargins ? '15px' : '0')} auto;
+  ${props =>
+    props.isHeightConstrained && `max-height: 11.5in; overflow: hidden;`}
+  margin: ${props => (props.hasVerticalMargins ? '15px' : '0')} auto;
   display: flex;
   flex-direction: column;
 `
@@ -73,7 +75,7 @@ const EducationContainer = styled.div`
 `
 
 const DesktopResume = props => {
-  const { page, constrainHeight, showPrintLink, verticalMargins } = props
+  const { page, isHeightConstrained, hasPrintLink, hasVerticalMargins } = props
   const { headerSize, main, hasTimeline, hasSkills } = page
   const { article, sidebar } = main
   const { experience } = article
@@ -83,10 +85,10 @@ const DesktopResume = props => {
 
   return (
     <Container
-      constrainHeight={constrainHeight}
-      verticalMargins={verticalMargins}
+      isHeightConstrained={isHeightConstrained}
+      hasVerticalMargins={hasVerticalMargins}
     >
-      <Header size={headerSize} showPrintLink={showPrintLink} />
+      <Header size={headerSize} hasPrintLink={hasPrintLink} />
       <Main backgroundColor={backgroundColor}>
         <TwoColumn>
           <Article backgroundColor={backgroundColor}>
@@ -119,3 +121,10 @@ const DesktopResume = props => {
 }
 
 export default DesktopResume
+
+DesktopResume.propTypes = {
+  page: PropTypes.object.isRequired,
+  isHeightConstrained: PropTypes.bool,
+  hasPrintLink: PropTypes.bool,
+  hasVerticalMargins: PropTypes.bool
+}

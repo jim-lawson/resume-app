@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import AppContext from '../AppContext'
@@ -83,7 +84,7 @@ const PrintableContainer = styled.div`
 `
 
 const Header = props => {
-  const { size, showPrintLink } = props
+  const { size, hasPrintLink } = props
   const { colors } = useContext(AppContext)
 
   const contactsContainer = (
@@ -102,7 +103,7 @@ const Header = props => {
           href="tel:+1 206-856-5464"
         ></ContactInfo>
       </ContactContainer>
-      {showPrintLink && (
+      {hasPrintLink && (
         <PrintableContainer>
           <Link to="/printable" target="_blank" rel="noopener noreferrer">
             <Icon icon="print" />
@@ -126,7 +127,7 @@ const Header = props => {
           <Image
             image="jim"
             alt="Jim Lawson"
-            shadow={true}
+            hasShadow={true}
             width={size === 'mobile' ? 120 : 160}
             height={size === 'mobile' ? 71 : 95}
           />
@@ -140,3 +141,8 @@ const Header = props => {
 }
 
 export default Header
+
+Header.propTypes = {
+  size: PropTypes.string.isRequired,
+  hasPrintLink: PropTypes.bool
+}

@@ -307,8 +307,8 @@ export const multiPageData = {
                   alt: 'Word Cheater - React Native iPhone App',
                   width: 125,
                   height: 248,
-                  roundedCorners: true,
-                  verticalMargins: true
+                  hasRoundedCorners: true,
+                  hasVerticalMargins: true
                 }
               ],
               body: [

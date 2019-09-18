@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ExperienceDates from './ExperienceDates'
 import ExperienceHeading from './ExperienceHeading'
@@ -18,7 +19,7 @@ const ListContainer = styled.div`
 `
 
 const Experience = props => {
-  const { data, multiLineHeading = false } = props
+  const { data, hasMultiLineHeading = false } = props
 
   return (
     <div>
@@ -41,7 +42,7 @@ const Experience = props => {
                   title={title}
                   company={company}
                   location={location}
-                  multiLine={multiLineHeading}
+                  isMultiLine={hasMultiLineHeading}
                 />
                 <ExperienceDates startDate={startDate} endDate={endDate} />
                 <ExperienceSections sections={sections} />
@@ -55,3 +56,8 @@ const Experience = props => {
 }
 
 export default Experience
+
+Experience.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  hasMultiLineHeading: PropTypes.bool
+}

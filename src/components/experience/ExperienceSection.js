@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Heading = styled.div`
@@ -27,3 +28,10 @@ const ExperienceSection = props => {
 }
 
 export default ExperienceSection
+
+ExperienceSection.propTypes = {
+  section: PropTypes.shape({
+    title: PropTypes.string,
+    body: PropTypes.arrayOf(PropTypes.string).isRequired
+  }).isRequired
+}

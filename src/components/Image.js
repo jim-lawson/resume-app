@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import jim from '../images/jim-cropped-color.png'
 import twitterImg from '../images/twitter.png'
@@ -24,9 +25,9 @@ const roundedCorners = `
 const Container = styled.div`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
-  ${props => props.shadow && shadow}
-  ${props => props.roundedCorners && roundedCorners}
-  margin: ${props => (props.verticalMargins ? '10px 15px 10px' : '5px')} 0;
+  ${props => props.hasShadow && shadow}
+  ${props => props.hasRoundedCorners && roundedCorners}
+  margin: ${props => (props.hasVerticalMargins ? '10px 15px 10px' : '5px')} 0;
   a {
     display: flex;
     align-items: center;
@@ -43,9 +44,9 @@ const Image = props => {
     alt,
     label,
     href,
-    shadow,
-    roundedCorners,
-    verticalMargins
+    hasShadow,
+    hasRoundedCorners,
+    hasVerticalMargins
   } = props
   let src
   switch (image) {
@@ -87,9 +88,9 @@ const Image = props => {
     <Container
       width={width}
       height={height}
-      shadow={shadow}
-      roundedCorners={roundedCorners}
-      verticalMargins={verticalMargins}
+      hasShadow={hasShadow}
+      hasRoundedCorners={hasRoundedCorners}
+      hasVerticalMargins={hasVerticalMargins}
     >
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
@@ -103,3 +104,15 @@ const Image = props => {
 }
 
 export default Image
+
+Image.propTypes = {
+  image: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  alt: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  href: PropTypes.string,
+  hasShadow: PropTypes.bool,
+  hasRoundedCorners: PropTypes.bool,
+  hasVerticalMargins: PropTypes.bool
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import AboutMeIcon from '@material-ui/icons/SentimentSatisfiedAlt'
 import CodeIcon from '@material-ui/icons/Code'
@@ -47,3 +48,7 @@ const Icon = props => {
 }
 
 export default Icon
+
+Icon.propTypes = {
+  icon: PropTypes.string.isRequired
+}

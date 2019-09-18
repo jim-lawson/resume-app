@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Icon from './Icon'
 
@@ -35,3 +36,9 @@ const ContactInfo = props => {
 }
 
 export default ContactInfo
+
+ContactInfo.propTypes = {
+  icon: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string
+}

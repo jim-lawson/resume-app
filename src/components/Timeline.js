@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState, useRef } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Colors = [
@@ -175,3 +176,13 @@ const Timeline = props => {
 }
 
 export default Timeline
+
+Timeline.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      startDate: PropTypes.instanceOf(Date).isRequired,
+      endDate: PropTypes.instanceOf(Date).isRequired
+    })
+  ).isRequired
+}

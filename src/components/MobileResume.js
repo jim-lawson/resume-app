@@ -75,7 +75,7 @@ const MobileResume = () => {
         <Article backgroundColor={colors.backgroundColor}>
           <Experience
             data={singlePageData.main.article.experience}
-            multiLineHeading={true}
+            hasMultiLineHeading={true}
           />
         </Article>
         <aside>

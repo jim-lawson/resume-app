@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -57,3 +58,13 @@ const Skills = props => {
 }
 
 export default Skills
+
+Skills.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      percentage: PropTypes.string.isRequired
+    })
+  ).isRequired,
+  columns: PropTypes.number.isRequired
+}

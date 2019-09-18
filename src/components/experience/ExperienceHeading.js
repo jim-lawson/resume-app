@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Icon from '../../components/Icon'
 import AppContext from '../../AppContext'
@@ -39,7 +40,7 @@ const MultiLineHeading = styled.div`
 `
 
 const ExperienceHeading = props => {
-  const { title, company, location, multiLine = false } = props
+  const { title, company, location, isMultiLine = false } = props
   const {
     colors: { accentColor }
   } = useContext(AppContext)
@@ -49,16 +50,23 @@ const ExperienceHeading = props => {
       <SingleLineHeading>
         <div>
           <h5>{title}</h5>
-          {!multiLine && <h6> - {company}</h6>}
+          {!isMultiLine && <h6> - {company}</h6>}
         </div>
         <div>
           <Icon icon="location" />
           <div>{location}</div>
         </div>
       </SingleLineHeading>
-      <MultiLineHeading>{multiLine && <h6>{company}</h6>}</MultiLineHeading>
+      <MultiLineHeading>{isMultiLine && <h6>{company}</h6>}</MultiLineHeading>
     </Container>
   )
 }
 
 export default ExperienceHeading
+
+ExperienceHeading.propTypes = {
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  isMultiLine: PropTypes.bool
+}

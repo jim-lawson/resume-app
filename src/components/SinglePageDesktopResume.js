@@ -12,8 +12,8 @@ const SinglePageDesktopResume = props => {
     <Container>
       <DesktopResume
         page={singlePageData}
-        showPrintLink={true}
-        verticalMargins={true}
+        hasPrintLink={true}
+        hasVerticalMargins={true}
       />
     </Container>
   )

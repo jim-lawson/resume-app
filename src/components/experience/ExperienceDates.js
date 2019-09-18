@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -42,3 +43,8 @@ const ExperienceDates = props => {
 }
 
 export default ExperienceDates
+
+ExperienceDates.propTypes = {
+  startDate: PropTypes.instanceOf(Date).isRequired,
+  endDate: PropTypes.instanceOf(Date).isRequired
+}
