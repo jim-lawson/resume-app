@@ -51,45 +51,112 @@ const YearsSvg = styled.svg`
 `
 
 const Years = styled.ul`
+  padding-left: 6px;
   display: flex;
 `
 
 const Year = styled.li`
   list-style-type: none;
   font-size: 0.5em;
-  text-align: center;
 `
 
 const Timeline = props => {
-  const { data } = props
+  const { data, containerWidth = 0 } = props
+
   const containerRef = useRef()
 
   const [timeLineWidth, setTimeLineWidth] = useState(0)
 
   useLayoutEffect(() => {
-    setTimeLineWidth(containerRef.current.offsetWidth)
-  }, [])
+    if (containerRef.current) {
+      setTimeLineWidth(containerWidth || containerRef.current.offsetWidth)
+    }
+  }, [containerWidth])
+
+  if (!data) {
+    return null
+  }
 
   if (!data.length) {
     console.warn('Timeline component data is empty')
-    return <div />
+    return null
   }
 
-  const firstYear = data[0].startDate.getFullYear()
-  const lastYear = data[data.length - 1].endDate.getFullYear()
-  const yearElements = []
+  const firstStartDate = data[0].startDate
 
-  const numYears = lastYear - firstYear + 2
+  if (!firstStartDate || !(firstStartDate instanceof Date)) {
+    console.warn('Timeline component has invalid start date for first event')
+    return null
+  }
+
+  const lastEndDate = data[data.length - 1].endDate
+
+  if (!lastEndDate || !(lastEndDate instanceof Date)) {
+    console.warn('Timeline component has invalid end date for last event')
+    return null
+  }
+
+  let ovelappingEvents = false
+  data.forEach(event => {
+    const otherEvents = data.filter(e => e !== event)
+    otherEvents.forEach(e => {
+      if (
+        (e.startDate > event.startDate && e.endDate < event.endDate) ||
+        (e.startDate < event.startDate && e.endDate > event.startDate)
+      ) {
+        ovelappingEvents = true
+      }
+    })
+  })
+
+  if (ovelappingEvents) {
+    console.warn('Overlapping events found in timeline. This is not supported.')
+    return null
+  }
+
+  const firstYear = firstStartDate.getFullYear()
+  const lastYear = lastEndDate.getFullYear()
+  const yearElements = []
+  const yearMarkers = []
+
+  const numYears = lastYear - firstYear + 1
   const yearWidth = parseInt(timeLineWidth / numYears)
   const circleRadius = 3
   const circleStrokeWidth = 1
   const lineStrokeWidth = 1
 
-  for (var y = firstYear; y < lastYear + 2; y++) {
+  for (var y = firstYear, index = 0; y < lastYear + 1; y++, index++) {
     yearElements.push(
-      <Year key={y} style={{ width: `${yearWidth}px` }}>
+      <Year
+        key={y}
+        style={{
+          width: `${yearWidth}px`
+        }}
+      >
         <div>{y % 2 === 0 ? y : ''}</div>
       </Year>
+    )
+
+    yearMarkers.push(
+      index % 2 === 0 ? (
+        <circle
+          key={index}
+          cx={circleRadius + circleStrokeWidth + index * yearWidth}
+          cy={circleRadius + circleStrokeWidth}
+          r={circleRadius}
+          strokeWidth={circleStrokeWidth}
+          stroke="black"
+        />
+      ) : (
+        <line
+          key={index}
+          x1={circleRadius + circleStrokeWidth + index * yearWidth}
+          y1={0}
+          x2={circleRadius + circleStrokeWidth + index * yearWidth}
+          y2={circleRadius * 2 + circleStrokeWidth * 2}
+          stroke="black"
+        />
+      )
     )
   }
 
@@ -142,30 +209,7 @@ const Timeline = props => {
             stroke="black"
             strokeWidth={lineStrokeWidth}
           />
-          {// TODO: Don't render last line, also use a for loop instead of allocating an array
-          new Array(yearElements.length)
-            .fill()
-            .map((year, index) =>
-              index % 2 === 0 ? (
-                <circle
-                  key={index}
-                  cx={circleRadius + circleStrokeWidth + index * yearWidth}
-                  cy={circleRadius + circleStrokeWidth}
-                  r={circleRadius}
-                  strokeWidth={circleStrokeWidth}
-                  stroke="black"
-                />
-              ) : (
-                <line
-                  key={index}
-                  x1={circleRadius + circleStrokeWidth + index * yearWidth}
-                  y1={0}
-                  x2={circleRadius + circleStrokeWidth + index * yearWidth}
-                  y2={circleRadius * 2 + circleStrokeWidth * 2}
-                  stroke="black"
-                />
-              )
-            )}
+          {yearMarkers}
         </YearsSvg>
 
         {/* TODO: magic number for left margin */}
@@ -184,5 +228,6 @@ Timeline.propTypes = {
       startDate: PropTypes.instanceOf(Date).isRequired,
       endDate: PropTypes.instanceOf(Date).isRequired
     })
-  ).isRequired
+  ).isRequired,
+  containerWidth: PropTypes.number
 }
