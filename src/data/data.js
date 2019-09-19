@@ -376,7 +376,7 @@ export const skillsData = [
   },
   {
     name: 'React',
-    percentage: '80'
+    percentage: '85'
   },
   {
     name: 'React Native',
@@ -404,7 +404,7 @@ export const skillsData = [
   },
   {
     name: 'Jest',
-    percentage: '65'
+    percentage: '75'
   },
   {
     name: 'Puppeteer',
