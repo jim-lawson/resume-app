@@ -1,0 +1,1096 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline /> should render as expected with a long time span 1`] = `
+<div
+  class="sc-bdVaJa UoSJW"
+>
+  <div
+    class="sc-bwzfXH iUXZkq"
+  >
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 1
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 2
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(130, 59, 134);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 3
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(2, 130, 174);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 4
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(188, 114, 27);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 5
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-EHOje gmhMvO"
+  >
+    <svg
+      class="sc-bZQynM SLpfV"
+      style="margin-left: 25px; height: 8px;"
+    >
+      <line
+        stroke="black"
+        stroke-width="1"
+        x1="3"
+        x2="0"
+        y1="3.5"
+        y2="3.5"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+    </svg>
+    <ul
+      class="sc-gzVnrw krluXX"
+      style="margin-left: 14px;"
+    >
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1990
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1992
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1994
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1996
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1998
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2000
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2002
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2004
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2006
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2008
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2010
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2012
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2014
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2016
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2018
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2020
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<Timeline /> should render as expected with a medium time span 1`] = `
+<div
+  class="sc-bdVaJa UoSJW"
+>
+  <div
+    class="sc-bwzfXH iUXZkq"
+  >
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 1
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 2
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(130, 59, 134);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 3
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(2, 130, 174);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 4
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(188, 114, 27);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 0px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 5
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-EHOje gmhMvO"
+  >
+    <svg
+      class="sc-bZQynM SLpfV"
+      style="margin-left: 25px; height: 8px;"
+    >
+      <line
+        stroke="black"
+        stroke-width="1"
+        x1="3"
+        x2="0"
+        y1="3.5"
+        y2="3.5"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="4"
+        x2="4"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+    </svg>
+    <ul
+      class="sc-gzVnrw krluXX"
+      style="margin-left: 14px;"
+    >
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1990
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1992
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1994
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1996
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          1998
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2000
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2002
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 0px;"
+      >
+        <div>
+          2004
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<Timeline /> should render as expected with a short time span 1`] = `
+<div
+  class="sc-bdVaJa UoSJW"
+>
+  <div
+    class="sc-bwzfXH iUXZkq"
+  >
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 36.39543378995434px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 1
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 139.60456621004565px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 2
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(130, 59, 134);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 0px; width: 124.6365296803653px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 3
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(2, 130, 174);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 44.13059360730594px; width: 95.47397260273972px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 4
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(188, 114, 27);"
+      />
+    </div>
+    <div
+      class="sc-htpNat bhgXav"
+      style="margin-left: 80.52602739726028px; width: 183.71506849315068px;"
+    >
+      <div
+        class="sc-bxivhb bXPfCa"
+      >
+        Event 5
+      </div>
+      <div
+        class="sc-ifAKCX gVKVsg"
+        style="background: rgb(190, 31, 14);"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-EHOje gmhMvO"
+  >
+    <svg
+      class="sc-bZQynM SLpfV"
+      style="margin-left: 25px; height: 8px;"
+    >
+      <line
+        stroke="black"
+        stroke-width="1"
+        x1="3"
+        x2="800"
+        y1="3.5"
+        y2="3.5"
+      />
+      <circle
+        cx="4"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="92"
+        x2="92"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="180"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="268"
+        x2="268"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="356"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="444"
+        x2="444"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="532"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+      <line
+        stroke="black"
+        x1="620"
+        x2="620"
+        y1="0"
+        y2="8"
+      />
+      <circle
+        cx="708"
+        cy="4"
+        r="3"
+        stroke="black"
+        stroke-width="1"
+      />
+    </svg>
+    <ul
+      class="sc-gzVnrw krluXX"
+      style="margin-left: 14px;"
+    >
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div>
+          1990
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div>
+          1992
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div>
+          1994
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div>
+          1996
+        </div>
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div />
+      </li>
+      <li
+        class="sc-htoDjs dvpBuU"
+        style="width: 88px;"
+      >
+        <div>
+          1998
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
