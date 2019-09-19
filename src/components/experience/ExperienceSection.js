@@ -6,6 +6,7 @@ const Heading = styled.div`
   color: rgb(121, 73, 17);
   font-size: 0.45em;
   margin-bottom: 1px;
+  font-weight: bold;
 `
 
 const Paragraph = styled.p`
