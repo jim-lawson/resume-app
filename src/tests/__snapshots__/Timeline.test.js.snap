@@ -569,7 +569,7 @@ exports[`<Timeline /> should render as expected with a medium time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(190, 31, 14);"
+        style="background: rgb(188, 114, 27);"
       />
     </div>
     <div
@@ -583,7 +583,7 @@ exports[`<Timeline /> should render as expected with a medium time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(130, 59, 134);"
+        style="background: rgb(190, 31, 14);"
       />
     </div>
     <div
@@ -597,7 +597,7 @@ exports[`<Timeline /> should render as expected with a medium time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(2, 130, 174);"
+        style="background: rgb(130, 59, 134);"
       />
     </div>
     <div
@@ -611,7 +611,7 @@ exports[`<Timeline /> should render as expected with a medium time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(188, 114, 27);"
+        style="background: rgb(2, 130, 174);"
       />
     </div>
     <div
@@ -625,7 +625,7 @@ exports[`<Timeline /> should render as expected with a medium time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(190, 31, 14);"
+        style="background: rgb(188, 114, 27);"
       />
     </div>
   </div>
@@ -883,7 +883,7 @@ exports[`<Timeline /> should render as expected with a short time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(190, 31, 14);"
+        style="background: rgb(2, 130, 174);"
       />
     </div>
     <div
@@ -897,7 +897,7 @@ exports[`<Timeline /> should render as expected with a short time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(130, 59, 134);"
+        style="background: rgb(188, 114, 27);"
       />
     </div>
     <div
@@ -911,7 +911,7 @@ exports[`<Timeline /> should render as expected with a short time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(2, 130, 174);"
+        style="background: rgb(190, 31, 14);"
       />
     </div>
     <div
@@ -925,7 +925,7 @@ exports[`<Timeline /> should render as expected with a short time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(188, 114, 27);"
+        style="background: rgb(130, 59, 134);"
       />
     </div>
     <div
@@ -939,7 +939,7 @@ exports[`<Timeline /> should render as expected with a short time span 1`] = `
       </div>
       <div
         class="sc-ifAKCX gVKVsg"
-        style="background: rgb(190, 31, 14);"
+        style="background: rgb(2, 130, 174);"
       />
     </div>
   </div>

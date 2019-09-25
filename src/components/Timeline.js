@@ -2,13 +2,6 @@ import React, { useLayoutEffect, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Colors = [
-  'rgb(190, 31, 14)',
-  'rgb(130, 59, 134)',
-  'rgb(2, 130, 174)',
-  'rgb(188, 114, 27)'
-]
-
 const OneYear = 1000 * 60 * 60 * 24 * 365
 
 const Container = styled.div`
@@ -59,6 +52,27 @@ const Year = styled.li`
   list-style-type: none;
   font-size: 0.5em;
 `
+
+const colorGenerator = function*() {
+  const colors = [
+    'rgb(190, 31, 14)',
+    'rgb(130, 59, 134)',
+    'rgb(2, 130, 174)',
+    'rgb(188, 114, 27)'
+  ]
+
+  let colorIndex = 0
+
+  while (true) {
+    yield colors[colorIndex]
+    colorIndex++
+    if (colorIndex == colors.length) {
+      colorIndex = 0
+    }
+  }
+}
+
+const colors = colorGenerator()
 
 const Timeline = props => {
   const { data, containerWidth = 0 } = props
@@ -186,7 +200,7 @@ const Timeline = props => {
               <PeriodText>{entry.label}</PeriodText>
               <PeriodBar
                 style={{
-                  background: Colors[(index + Colors.length) % Colors.length]
+                  background: colors.next().value
                 }}
               />
             </Period>
