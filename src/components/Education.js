@@ -9,7 +9,7 @@ const Education = () => {
   return (
     <Container>
       1988 - 1992 &middot; Washington State Univeristy, Edward R. Murrow College
-      of Communication, Bachelors's Degree
+      of Communication, Bachelor's Degree
     </Container>
   )
 }
