@@ -7,11 +7,24 @@ export const multiPageData = {
       main: {
         article: {
           experience: [
+  {
+              id: 'godaddy',
+              title: 'Software Development Engineer IV',
+              company: 'GoDaddy',
+              location: 'Kirkland, WA',
+              startDate: new Date(2019, 11, 1),
+              endDate: new Date(),
+              sections: [
+                {
+                  body: [],
+                },
+              ],
+            },
             {
               id: 'maana',
               title: 'Senior UI Engineer',
               company: 'Maana',
-              location: 'Bellevue',
+              location: 'Bellevue, WA',
               startDate: new Date(2015, 9),
               endDate: new Date(2019, 7, 1),
               sections: [
@@ -55,7 +68,7 @@ export const multiPageData = {
               id: 'microsoft',
               title: 'Software Development Engineer',
               company: 'Microsoft',
-              location: 'Bellevue',
+              location: 'Bellevue, WA',
               startDate: new Date(2005, 9),
               endDate: new Date(2015, 8),
               sections: [
@@ -218,7 +231,7 @@ export const multiPageData = {
               id: 'alki',
               title: 'Founder, UI Engineer',
               company: 'Alki Technology',
-              location: 'Seattle',
+              location: 'Seattle, WA',
               startDate: new Date(1999, 7),
               endDate: new Date(2005, 9),
               sections: [
@@ -245,7 +258,7 @@ export const multiPageData = {
               id: 'expedia',
               title: 'Web Development Engineer',
               company: 'Expedia',
-              location: 'Redmond',
+              location: 'Redmond, WA',
               startDate: new Date(1998, 0),
               endDate: new Date(1999, 5),
               sections: [
@@ -268,7 +281,7 @@ export const multiPageData = {
               id: 'msn',
               title: 'Web Development Engineer',
               company: 'MSN',
-              location: 'Redmond',
+              location: 'Redmond, WA',
               startDate: new Date(1996, 1),
               endDate: new Date(1998, 0),
               sections: [

@@ -1,0 +1,17 @@
+{
+  "printWidth": 120,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react$",
+    "^preact",
+    "^@?\\w",
+    "^@gdcorp-digitalcare/",
+    "^[./].*(?<!\\.(css|scss|styles))$",
+    "\\.(css|scss|styles)$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

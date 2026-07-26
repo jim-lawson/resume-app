@@ -96,13 +96,13 @@ const Header = props => {
           href="mailto:jim-lawson@comcast.net"
         ></ContactInfo>
       </ContactContainer>
-      <ContactContainer size={size}>
+      {/* <ContactContainer size={size}>
         <ContactInfo
           icon="phone"
           text="+1 206-856-5464"
           href="tel:+1 206-856-5464"
         ></ContactInfo>
-      </ContactContainer>
+      </ContactContainer> */}
       {hasPrintLink && (
         <PrintableContainer>
           <Link to="/printable" target="_blank" rel="noopener noreferrer">
@@ -128,8 +128,8 @@ const Header = props => {
             image="jim"
             alt="Jim Lawson"
             hasShadow={true}
-            width={size === 'mobile' ? 120 : 160}
-            height={size === 'mobile' ? 71 : 95}
+            width={size === 'mobile' ? 120 : 180}
+            height={size === 'mobile' ? 62 : 93}
           />
         )}
       </DesktopContainer>
